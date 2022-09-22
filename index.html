@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
+    <title>KeyCode Generator</title>
+</head>
+
+<style>
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;  
+    }
+
+    #big-key, #message {
+        font-size: 145px;
+        text-align: center;
+        margin: 50px 0;
+        font-weight: 200;
+    }
+    
+    body {
+        background-color: #DEE6E9;
+        cursor: default;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+    
+    #welcome {
+        text-align: center;
+    }
+    
+    #events {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .eventbox p {
+        border: solid black;
+        text-align: center;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .eventbox p:nth-child(1) {
+        font-size: 40px;
+    }
+    
+    .eventbox p:nth-child(2) {
+        height: 30%;
+    }
+    
+    .eventbox {
+        display: flex;
+        flex-direction: column;
+        border: solid black;
+        width: 300px;
+        height: 200px;
+    }
+    
+    
+</style>
+<body>
+    <h1 id="big-key">Welcome!</h1>
+    <div id="events">
+        <div class="eventbox">
+            <p id="which"></p>
+            <p class="">event.which</p>
+        </div>
+        <div class="eventbox">
+            <p id="key" class=""></p>
+            <p class="">event.key</p>
+        </div>
+        <div class="eventbox">
+            <p id="code" class=""></p>
+            <p class="">event.code</p>
+        </div>
+    </div>
+    <div id="message" style="font-size: 40px;">
+      <p>Enter key to get started</p>  
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
